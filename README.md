@@ -1,4 +1,4 @@
-# # 📶 WiFi QR Code Generator
+# 📶 WiFi QR Code Generator
 
 A simple Python project that generates a QR code for your WiFi network.
 
@@ -20,41 +20,43 @@ Users can scan the generated QR code with their phone to connect to the WiFi net
 
 ## 📦 Installation
 
-Clone this repository:
+Download this repository from GitHub and extract the ZIP file.
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+Open **Command Prompt (CMD)** and go to your Downloads folder:
+
+```cmd
+cd %USERPROFILE%\Downloads
 ```
 
 Go to the project folder:
 
-```bash
+```cmd
 cd wifi-qr-generator
 ```
 
 Install the required packages:
 
-```bash
-pip install -r requirements.txt
+```cmd
+py -m pip install -r requirements.txt
 ```
 
 ## ▶️ How to Run
 
 Run the Python file:
 
-```bash
-py generate_wifi_qr.py
+```cmd
+py wifi_qrcode_generator.py
 ```
 
-Or:
+If `py` does not work, try:
 
-```bash
-python generate_wifi_qr.py
+```cmd
+python wifi_qrcode_generator.py
 ```
 
 ## ⚙️ Configuration
 
-Open `generate_wifi_qr.py` and change these values:
+Open `wifi_qrcode_generator.py` and change these values:
 
 ```python
 ssid = "YOUR_WIFI_NAME"
@@ -67,21 +69,18 @@ security = "WPA"
 ```text
 wifi-qr-generator/
 │
-├── generate_wifi_qr.py
+├── wifi_qrcode_generator.py
 ├── requirements.txt
 ├── README.md
-└── wifi_qr.png
+├── LICENSE
+└── .gitignore
 ```
 
 ## 📸 Output
 
-The program generates a file called:
+The program automatically generates a WiFi QR code image.
 
-```text
-wifi_qr.png
-```
-
-Scan the QR code using your phone's camera to connect to the configured WiFi network.
+Scan the generated QR code using your phone's camera to connect to the configured WiFi network.
 
 ## 🔮 Future Improvements
 
